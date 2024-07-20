@@ -16,7 +16,7 @@
 }
 #brigth,#menu{
     width: 35px;
-    padding: 5px;
+    /* padding: 5px; */
 }
 .brigth{
     display:flex ;
@@ -248,6 +248,9 @@ a{
 
     }
 }
+.High{
+   text-align: justify;
+}
 .odin{
     opacity: 0.7;
 }
@@ -364,6 +367,11 @@ ul{
         grid-template-rows: repeat(2);
         row-gap: 20px;
     }
+    /* .last-footer-section{
+        display: grid;
+        grid-template-columns: repeat(2,200px);
+        grid-template-rows: repeat(2);
+    } */
 }
 .line{
     border-bottom: 1px groove rgb(224, 224, 224);
@@ -373,4 +381,12 @@ ul{
     font-size: 12px;
     opacity: 0.7;
     padding: 20px 0px 20px 0px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+.baten{
+    border: none;
+    background-color: rgba(255, 255, 255, 0.676);
 }
