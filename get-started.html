@@ -13,6 +13,7 @@
   <title>Get Started!</title>
   <style>
     @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
 
     * {
       font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -127,11 +128,12 @@
       color: cyan;
     }
 
-    .col-2 ul,
+    .col-6 ul,
     li {
       list-style: none;
       line-height: 2.5;
       font-size: 14px;
+      text-wrap: wrap;
     }
 
     li:nth-child(1) {
@@ -139,14 +141,22 @@
       font-weight: 700;
     }
 
-    li:hover {
+  li:hover {
       color: black;
-    }
+  }
 
     .menus {
       display: none;
     }
-
+    .menu-li{
+      margin-left: 40px;
+    }
+    .odin-txt{
+    font-family: "Caesar Dressing", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(31,41,55);
+  }
     @media only screen and (max-width:914px) {
       .navbar {
         display: none !important;
@@ -212,13 +222,13 @@
                 <a class="nav-link active" aria-current="page" href="#">All Paths</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="./about.html">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Community</a>
+                <a class="nav-link" href="./">Community</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Support us</a>
+                <a class="nav-link" href=".">Support us</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Sign in</a>
@@ -235,28 +245,29 @@
         </div>
       </div>
     </nav>
-    <div class="menubar w-100 d-flex justify-content-between px-5  align-items-center border d-none"
+    <div class="menubar w-100 d-flex justify-content-between px-3 align-items-center border d-none"
       style="background-color: white;">
       <img src="./get-started-imgs/thala.png" alt="">
       <a class="" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
         <img src="./get-started-imgs/icons8-menu-30.png" style="width: 20px;height: 20px;" alt="">
       </a>
     </div>
-    <div style="width: 55%;" class="offcanvas  offcanvas-start" tabindex="-1" id="offcanvasExample"
+    <div style="width: 50%;" class="offcanvas  offcanvas-start" tabindex="-1" id="offcanvasExample"
       aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="./get-started-imgs/Annotation 2024-07-18 161141.png" style="width: 100%;height: auto;" alt=""></h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
-          <ul>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-about-24.png" style="margin-top: -6px;" alt=""></div><div>About</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-map-24.png" style="margin-top: -6px;" alt=""></div><div>All paths</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-home-24.png" style="margin-top: -6px;" alt=""></div><div>Home</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-love-24.png" style="margin-top: -6px;" alt=""></div><div>Support us</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-chat-24.png" style="margin-top: -6px;" alt=""></div><div>Community</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-rocket-24.png" style="margin-top: -6px;" alt=""></div><div>Get started</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-sunny-24.png" style="margin-top: -6px;" alt=""></div><div>Light mode</div></a></li>
-            <li><a style="font-weight: 400;" class="d-flex  gap-3 align-items-center text-reset  fs-5 text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-sign-in-24.png" style="margin-top: -6px;" alt=""></div><div>Sign in</div></a></li>
+          <ul class="m-0 p-0">
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-home-24.png" style="margin-top: -6px;" alt=""></div><div>Home</div></a></li>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-about-24.png" style="margin-top: -6px;" alt=""></div><div>About</div></a></li>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-map-24.png" style="margin-top: -6px;" alt=""></div><div>All paths</div></a></li>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-love-24.png" style="margin-top: -6px;" alt=""></div><div>Support us</div></a></li>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-chat-24.png" style="margin-top: -6px;" alt=""></div><div>Community</div></a></li>
+            <div style="height: 1px;width: 100%;background-color: rgb(212, 212, 212);" class="my-2"></div>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-rocket-24.png" style="margin-top: -6px;" alt=""></div><div>Get started</div></a></li>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-sunny-24.png" style="margin-top: -6px;" alt=""></div><div>Light mode</div></a></li>
+            <li class="menu-li"><a style="font-weight: 500;" class="d-flex  gap-3 align-items-center text-reset fs-6 menubar-text text-decoration-none" href="#"><div><img src="./get-started-imgs/icons8-sign-in-24.png" style="margin-top: -6px;" alt=""></div><div>Sign in</div></a></li>
           </ul>
         </div>
       </div>
@@ -307,7 +318,7 @@
               </div>
             </div>
             <div class="my-4 d-flex gap-2">
-              <button class="btn w-50 border border-1"><ion-icon name="logo-github"></ion-icon></button>
+              <button class="btn w-50 border"><ion-icon name="logo-github"></ion-icon></button>
               <button class="btn w-50 border"><ion-icon name="logo-google"></ion-icon></button>
             </div>
           </form>
@@ -346,9 +357,9 @@
     <div class="container-fluid pt-3" style="background-color: white;">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4  d-flex flex-column gap-4">
-            <img src="./get-started-imgs/odin logo.png" style="width: 50%; height: 30%;" alt="">
-            <span>High quality coding education maintained by an open source community
+          <div class="col-12 col-lg-4 mb-3 d-flex flex-column gap-3">
+            <div class="d-flex align-items-center"><img src="./get-started-imgs/thala.png" style="width: auto; height: auto;" alt=""><div class="odin-txt fs-5">THE ODIN PROJECT</div></div>
+            <span style="font-size: 14px;">High quality coding education maintained by an open source community.
             </span>
             <span class="d-flex gap-3">
               <a href=""><ion-icon name="logo-github" class="git"></ion-icon></a>
@@ -357,38 +368,40 @@
               <a href=""><ion-icon name="logo-twitter" class="twitter"></ion-icon></a>
             </span>
           </div>
-          <!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 col-xxl-8">
-          <div class="row"> -->
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-3">
-            <ul class="list-style-none m-0 p-0">
-              <li>About us</li>
-              <li>About</li>
-              <li>Team</li>
-              <li>Blog</li>
-              <li>Success stories</li>
-            </ul>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-3">
-            <ul class="m-0 p-0">
-              <li>Support</li>
-              <li>FAQ</li>
-              <li>Contribute</li>
-              <li>Contact us</li>
-            </ul>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-3">
-            <ul class="m-0 p-0">
-              <li>Guides</li>
-              <li>Community guides</li>
-              <li>Installation guides</li>
-            </ul>
-          </div>
-          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-2 col-xl-2 col-xxl-2 my-3">
-            <ul class="m-0 p-0">
-              <li>Legal</li>
-              <li>Terms</li>
-              <li>Privacy</li>
-            </ul>
+          <div class="col">
+            <div class="row">
+            <div class="col-6  mb-4 mb-xl-0 col-md-3">
+              <ul class="list-style-none m-0 p-0 text-nowrap">
+                <li>About us</li>
+                <li>About</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Success stories</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="m-0 p-0">
+                <li>Support</li>
+                <li>FAQ</li>
+                <li>Contribute</li>
+                <li>Contact us</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="m-0 p-0">
+                <li>Guides</li>
+                <li>Community guides</li>
+                <li>Installation guides</li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-3">
+              <ul class="m-0 p-0">
+                <li>Legal</li>
+                <li>Terms</li>
+                <li>Privacy</li>
+              </ul>
+            </div>
+            </div>
           </div>
           <div class="col-12 my-4">
             <div style="height: 1px;width: 100%;background-color: rgb(182, 182, 182);"></div>
