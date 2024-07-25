@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./react.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+    </style>
+        
+    <title>Node js</title>
+  </head>
+  <body>
+    <div class="border">
+        <div class="">
+            <nav class="navbar navbar-light">
+                <div class="container">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <a class="navbar-brand"><img src="./react-images/odin-icon-a34029cd84a741be4da27758dafd7d7ac3729021adea3e0701e310d91e5c1d04.svg" alt=""></a>
+                        <div class="logo-text">THE ODIN PROJECT</div>
+                    </div>
+                    <form class="d-flex">
+                        <ul class="nav justify-content-end">
+                            <li class="nav-item">
+                            <a class="nav-link  link-secondary  fw-bold" aria-current="page" href="#">All Paths</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link  link-secondary  fw-bold" href="#">About
+                            </a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link link-secondary  fw-bold" href="#">Community</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary  fw-bold" href="#">Support us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link link-secondary  fw-bold" href="#">Sign in</a>
+                            </li>
+                                <a class="navbar-brand hide"><img src="./react-images/icons8-brightness-24.png"class="bright" alt=""></a>
+                        </ul>
+                        <button class="btn btn-outline-success get-background hide" type="submit">Get Started</button>
+                        <a class="btn menu" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                            <img src="./react-images/icons8-menu-24.png" alt="">
+                        </a>
+                        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                            <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                    
+                                <div class="d-flex justify-content-center align-self-center">
+                                <a class="navbar-brand " href="#"><img src="./images/odin-icon-a34029cd84a741be4da27758dafd7d7ac3729021adea3e0701e310d91e5c1d04.svg" alt=""></a>
+                                <a class="navbar-brand logo-txt  d-flex justify-content-center align-self-center" href="#"><span class="logo-txt side-conatiner-logo">THE ODIN PROJECT</span></a>
+                                </div>
+                            </h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-home-24.png"  class="side-icon-img" alt="">
+                                    <span  class="fw-normal fs-5 link-dark p-2">Home</span>
+                                </div>
+                        
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-about-24.png" class="side-icon-img"  alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">All paths</span>
+                                </div>
+                                
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-map-24.png"  class="side-icon-img" alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">About</span>
+                                </div>
+                        
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-heart-24.png"  class="side-icon-img" alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">Support us</span>
+                                </div>
+                        
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-chat-24.png"  class="side-icon-img" alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">Community</span>
+                                </div>
+                                <div class="line"></div>
+                                
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-rocket-25.png"  class="side-icon-img" alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">Get start</span>
+                                </div>
+        
+        
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-brightness-24.png"  class="side-icon-img" alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">Light mode</span>
+                                </div>
+        
+        
+                                <div class="pt-3">
+                                    <img src="./react-images/icons8-sign-in-24.png"  class="side-icon-img" alt="">
+                                    <span class="fw-normal fs-5 link-dark p-2">Sign in</span>
+                                </div>
+                            </div>
+                        
+                        </div>    
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div> 
+
+
+    <div class="first  ">
+        <div class="  ">
+            <div class="react pt-5">
+                <div class="d-flex justify-content-center align-items-center "><img src="./node-images/badge-nodejs-1432a58382afd13f5bf55d4e5eda07244a3aa5fae9cee98ea034f17d6a09d503.svg" alt="" class="react-img"></div>
+                <div class="react-text text-center pt-3">NodeJS Course</div>
+            </div>
+
+            <div class=" d-flex justify-content-center align-items-center">
+                <div class="pt-5 p-3">
+                    <div class="sec-1">Overview</div>
+                    <div class="sec-2 pt-3 link-secondary">Take your JavaScript skills to the server-side! Learn how to fully craft your site's backend using <br>Express, the most popular back-end JavaScript framework! You will also learn how to use a relational<br> database, PostgreSQL. </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">Introduction to NodeJS</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Introduction to the Back End</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Introduction to Frameworks</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Introduction: What is NodeJS?</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Getting Started</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Debugging Node</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-tool-32.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Basic Informational Site</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Environment Variables</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">Express</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">introduction to express</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Routers</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Controllers</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Views</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-tool-32.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Mini Message Board</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Deployment</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Forms and Data Handling</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Installing PostgreSQL</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Using PostgreSQL</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-tool-32.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Inventory Application</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            
+
+
+       
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">ORMs</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Prisma ORM</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-tool-32.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: File Uploader</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">APIS</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">API Basic</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">APL Security</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-tool-32.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Blog API</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">Testing Express</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Testing Routes and Controllers</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Testing Database Operations</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">Full Stack Projects</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Where's Waldo (A Photo Tagging App)</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Messaging App</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+
+
+            <div class="d-flex justify-content-center align-items-center p-1 px-3">
+                <!-- <div class="" > -->
+                    
+                    <div class="sec second-section shadow-sm  mb-5 bg-body rounded Introduction-main ">
+                        
+                            <div class="scnd">
+                                <div class=" link-dark introduction p-3">
+                                    <a href="" class="line link-dark">FINAL PROJECT</a>
+                                </div>
+                                <div class="">
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-tool-32.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Project: Odin-Book</div>
+                                    </div>
+                                    <div class="d-flex p-1 hover">
+                                        <div class="p-2"><img src="./react-images/icons8-book-24.png" alt=""></div>
+                                        <div class="Course ps-3 p-2">Conclusion</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            
+          
+        </div>
+    </div>
+
+
+    <div class="last p-5">
+        <div class="container">
+                <div class="text-center pt-5">
+                    <div class="fs-2 fw-bold">Support us!</div>
+                    <div class="odin" >The Odin Project is funded by the community. Join us in empowering learners <br>around the globe by supporting The Odin Project!</div>
+                    <div class="d-flex justify-content-center align-items-center pt-3 ">
+                        <div class="text-center  p-1">
+                        <button class="bttn-2 p-2 "> <a href="" class="link-dark curriculam ">Learn more</a></button>
+                        </div>
+                        <button class="btn btn-outline-success bttn link-light p-2 submit" type="submit">Donate now -></button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mt-5">
+            <div class="row">
+              <div class="d-flex ">
+                <div>
+                  <a class=" " href="#"><img src="./react-images/odin-icon-a34029cd84a741be4da27758dafd7d7ac3729021adea3e0701e310d91e5c1d04.svg" alt=""></a>
+                </div>
+                <div class="d-flex align-items-center">
+                  <a class="last-logo  justify-content-center align-self-center fs-5 text-decoration-none" href="#"><span class=" ">THE ODIN PROJECT</span></a>
+                </div>
+              </div>
+            </div>
+            <div class="row text-secondary mx-1 mt-4">
+              <h6>High quality coding education maintained by an open source community.</h6>
+            </div>
+            <div class="row mx-1 pt-3 ">
+              <div class="hover08 column d-flex">
+                <div>
+                  <figure><img class="figure git" src="./react-images/icons8-github-30.png"/></figure>
+                </div>
+                <div>
+                  <figure><img class="figure" src="./react-images/icons8-discord-30.png" /></figure>
+    
+                </div>
+                <div>
+                  <figure><img class="figure" src="./react-images/icons8-facebook-30.png" /></figure>
+    
+                </div>
+                <div>
+                  <figure><img class="figure" src="./react-images/icons8-twitter-30.png" /></figure>
+    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 mt-5">
+            <div class="row">
+              <div class="col"><div class="row"><div class="col-lg-6 mt-2 pb-2">
+                <div class="row">
+                  <h5>About us</h5>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>About</h6>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>Team</h6>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>Blog</h6>
+                </div>
+                <div class="row text-secondary">
+                  <h6>Success Stories</h6>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-2">
+                <div class="row pb-2">
+                  <h5>Guides</h5>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>Community guides</h6>
+                </div>
+                <div class="row text-secondary">
+                  <h6>Installation guides</h6>
+                </div>
+              </div></div></div>
+              <div class="col mx-5"><div class="row"><div class="col-lg-6 mt-2">
+                <div class="row pb-2">
+                  <h5>Support</h5>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>FAQ</h6>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>Contribute</h6>
+                </div>
+                <div class="row text-secondary">
+                  <h6>Contact us</h6>
+                </div>
+              </div>
+              <div class="col-lg-6 mt-2">
+                <div class="row pb-2">
+                  <h5>Legal</h5>
+                </div>
+                <div class="row text-secondary pb-2">
+                  <h6>Terms</h6>
+                </div>
+                <div class="row text-secondary">
+                  <h6>Privacy</h6>
+                </div>
+              </div></div></div>
+            </div>
+          </div>
+        </div>
+
+
+
+    
+   
+   
+   
+   
+   
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
